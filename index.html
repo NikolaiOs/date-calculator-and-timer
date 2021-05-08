@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Datecalc - Timer</title>
+    <script type="module" src="src/main.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+        integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <a href="datecalc.html">datecalc</a>
-    <a href="timer.html">timer</a>
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate">
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate">
+        </label>
+        <button type="submit">Рассчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+
+    <input type="text" name="time" id="time">
+    <button id="start">Старт</button>
+    <button id="stop">Стоп</button>
+    <div id="timer"></div>
 </body>
 
 </html>
