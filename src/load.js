@@ -11,7 +11,6 @@
 // loadScript('src/alarmclock.js', () => {
 //     console.log('Script loaded')
 // });
-
 function loadScript(urls, callback) {
     if(typeof urls === "function") return urls();
     if(typeof urls === "string") urls = [urls];
